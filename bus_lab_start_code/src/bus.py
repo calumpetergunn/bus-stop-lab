@@ -21,7 +21,7 @@ class Bus:
     def empty(self):
         self.passengers.clear()
 
-    def pick_up_from_stop(self, bus_stop, person):
-        if bus_stop.name == (bus_stop):
-            self.pick_up(person)
+    def pick_up_from_stop(self, bus_stop):
+        self.passengers += bus_stop.queue
+        bus_stop.queue.clear
         
